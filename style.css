@@ -271,7 +271,7 @@ ul {
 
 .banner {
   height: 500px;
-  background-image: url(/img/promoCheese.jpg);
+  background-image: url(/img/promo.jpeg);
   background-position: bottom;
   background-repeat: no-repeat;
 }
@@ -655,12 +655,6 @@ ul {
   color: wheat;
 }
 
-.myWrap {
-  max-width: 1171px;
-  margin: auto;
-  padding: 0 15px;
-}
-
 .footerWrap {
   display: flex;
   align-items: flex-start;
@@ -747,4 +741,10 @@ ul {
   .footerCategory:nth-child(4) {
     margin-right: 0;
   }
+}
+
+.myWrap {
+  max-width: 1171px;
+  margin: auto;
+  padding: 0 15px;
 }/*# sourceMappingURL=style.css.map */
