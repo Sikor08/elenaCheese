@@ -1,0 +1,35 @@
+.banner{
+    height: 500px;
+    background-image: url(/img/promoCheese.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    &__heading{
+        font-family: 'Cormorant';
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 61px;
+        color: #DBD1B9;
+        margin: 0;
+    }
+    &__text{
+        font-family: 'Poppins';
+        font-weight: 300;
+        font-size: 26px;
+        line-height: 39px;
+        color: #DBD1B9;
+        margin: 5px 0 38px 0;
+    }
+    &__btn{
+        background: $mainColor;
+        border: none;
+        padding: 12px 40px;
+        border-radius: 10px;
+            text-decoration: none;
+            font-family: 'Poppins';
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            color: #FFFFFF;
+        
+    }
+}

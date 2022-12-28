@@ -1,0 +1,65 @@
+.latestOffersWrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 28px;
+}
+.latestOffers{
+    padding-top: 80px;
+    @include heading
+  
+}
+.cardBox{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 30px;
+}
+.cardContent{
+    padding: 15px 0;
+    text-align: center;
+}
+
+.cardItem{
+    background: #F7F5F0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    &__img{
+        width: 100%;
+    }
+    &__title{
+        font-family: 'Poppins';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        margin-bottom: 5px;
+    }
+    &__price{
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        color: $mainColor;
+        margin-bottom: 12px;
+        &_old{
+            font-family: 'Poppins';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px;
+            text-decoration-line: line-through;
+            color: #656565;
+        }
+    }
+    &__btn{
+        padding: 8px 63px;
+        font-family: 'Poppins';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #FFFFFF;
+        background-color: $mainColor;
+        border: none;
+        border-radius: 10px;
+        margin: auto;
+    }
+
+}

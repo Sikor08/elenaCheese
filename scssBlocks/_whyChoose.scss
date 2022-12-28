@@ -1,0 +1,46 @@
+.whyChoose{
+    padding-top: 94px;
+    @include heading;
+    &__heading{
+        margin-bottom: 12px;
+    }
+}
+.whyChooseWrap{
+    display: flex;
+    justify-content: center;
+    @media (max-width: $mobileWidth) {
+        text-align: center;
+    }
+}
+.whyChooseList{
+    padding-top: 30px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 30px;
+    list-style-type: none;
+
+}
+.whyChooseItem{
+    &__svg{
+        margin-bottom: 17px;
+    }
+    &__title{
+        display: flex;
+        flex-direction: column;
+        height: 72px;
+        font-family: 'Lato';
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        color: #1F1F1F;
+    }
+    &__text{
+        max-width: 209px;
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #1F1F1F;
+    }
+}

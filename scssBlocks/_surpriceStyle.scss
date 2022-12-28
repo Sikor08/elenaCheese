@@ -1,0 +1,59 @@
+.supriseWrap{
+    display: flex;
+    gap: 33px;
+    @media (max-width: 1100px) {
+        flex-direction: column;
+    }
+}
+.surprice{
+    &__img{
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+    }
+}
+.surpriceContent{
+    @include heading;
+    @media (max-width: 1100px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__heading{
+        max-width: 350px;
+        margin-bottom: 24px;
+        @media (max-width: 1100px) {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+    &__text{
+        font-family: 'Poppins';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #1F1F1F;
+    }
+    &__textTop{
+        margin-bottom: 13px;
+    }
+    &__textBottom{
+        margin-bottom: 28px;
+    }
+    &__btn{
+        font-family: 'Poppins';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #FFFFFF;
+        background-color: $mainColor;
+        padding: 9px 31px;
+        border: none;
+        border-radius: 5px;
+        @media (max-width: 1100px) {
+            margin: auto;
+        }
+    }
+}
+

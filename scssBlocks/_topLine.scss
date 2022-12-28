@@ -1,0 +1,11 @@
+.topLine{
+    background-color: #C2E8CE;
+    display: flex;
+    &__text{
+        font-family: 'Poppins';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: #1F1F1F;
+    }
+}

@@ -1,0 +1,79 @@
+.header{
+    background-color: $mainColor;
+}
+.headerWrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: $mobileWidth) {
+       justify-content: center;
+    }
+}
+.logo{
+    width: 150px;
+    height: 150px;
+    &__img{
+        width: inherit;
+    }
+}
+.mainNavList{
+    display: flex;
+    list-style-type: none;
+    flex-grow: 1;
+    @media (max-width: 1100px) {
+        display: none;
+    }
+}
+.mainNavItem{
+    
+    &__link{
+    @include navLinkStyle
+   }
+   &__link1{
+    margin-left: 63px;
+    margin-right: 63px;
+   }
+   &__link2{
+    margin-right: 12px;
+   }
+   &__svg{
+    margin-right: 39px;
+   }
+   &__link3{
+    margin-right: 95px;
+   }
+   &__link4{
+    margin-right: 71px;
+}
+}
+
+.navWrap{
+    border: 1px solid #BFBFBF;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+.nav{
+    display: flex;
+    gap: 10px;
+    @media (max-width: $mobileWidth) {
+        display: none;
+    }
+}
+.cartQuantity{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 100%;
+    width: 12px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    background-color: $mainColor;
+    color: antiquewhite;
+}
