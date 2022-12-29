@@ -1,5 +1,10 @@
-.banner{
+.bannerWrap{
     height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner{
     background-image: url(img/promoCheese.jpg);
     background-position: bottom;
     background-repeat: no-repeat;
@@ -29,7 +34,11 @@
             font-weight: 500;
             font-size: 18px;
             line-height: 27px;
-            color: #FFFFFF;
+            color: #DBD1B9;
+            margin-right: auto;
+            @media (max-width: $mobileWidth) {
+                margin: 0 auto;
+            }
         
     }
 }

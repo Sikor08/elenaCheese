@@ -8,8 +8,6 @@
         position: relative;
         align-items: center;
     }
-    &__icon{
-    }
 }
 .burgerNav{
     display: none;
@@ -23,7 +21,6 @@
     display: none;
 }
 .burgerContent{
-
     @media (max-width: 1100px) {
         position: absolute;
         top: 47px;
@@ -57,8 +54,4 @@
 
 .burgerListItem__link{
     @include navLinkStyle
-}
-.bannerWrap{
-    height: 500px;
-    padding-top: 121px;
 }
