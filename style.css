@@ -276,6 +276,12 @@ ul {
   background-image: url(img/promoCheese.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
+  margin-top: 50px;
+}
+@media (max-width: 786px) {
+  .banner {
+    margin-top: 0;
+  }
 }
 .banner__heading {
   font-family: "Cormorant";
@@ -683,26 +689,21 @@ ul {
 .footerWrap {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
   padding: 60px 0;
+  gap: 20px;
 }
-@media (max-width: 1100px) {
-  .footerWrap {
-    flex-direction: column;
-    align-items: center;
-  }
+.footer__text {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #1F1F1F;
 }
 
 .footerContent {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-}
-@media (max-width: 1100px) {
-  .footerContent {
-    flex-direction: column;
-    text-align: center;
-  }
 }
 
 .footerlogo {
