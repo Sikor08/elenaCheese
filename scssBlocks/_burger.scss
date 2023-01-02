@@ -26,7 +26,6 @@
         top: 47px;
  
         width: 40%;
-        height: 500px;
         background-color: $mainColor;
         margin: 0 -15px;
         padding: 15px;
@@ -34,7 +33,7 @@
     @media (max-width: $mobileWidth) {
         top: 90px;
         width: 100%;
-        height: 200px;
+        opacity: 0.9;
     }
 }
 .burgerList{
@@ -54,4 +53,25 @@
 
 .burgerListItem__link{
     @include navLinkStyle
+}
+
+.categories{
+    font-family: "lato", sans-serif;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #DBD1B9;
+    &__heading{
+        display: block;
+    }
+}
+.categoriesItem{
+    display: flex;
+    margin: 15px 0;
+    &__name{
+        margin-left: 15px;
+        color: #DBD1B9;
+
+    }
 }

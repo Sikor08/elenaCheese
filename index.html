@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@700&family=Lato&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@700&family=Lato&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@700&family=Lato&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@700&family=Lato&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
    
     <title>cheese</title>
 </head>
@@ -115,35 +117,49 @@
                     <div class="cartQuantity">23</div>
             </div>
         </div>
-       
-     
-      
-            <div class="burgerContent invisible">
-                <ul class="burgerList ">
-                    <li class="burgerListItem">
-                        <a href="#" class="burgerListItem__link">Главная</a>
-                    </li>
-                    <li class="burgerListItem">
-                        <a href="#" class="burgerListItem__link">Категории</a>
-                        <svg class="burgerListItem__svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 1L5 5L9 1" stroke="#1F1F1F" stroke-width="1.5"/>
-                            </svg>
-    
-                    </li>
-                    <li class="burgerListItem">
-                        <a href="#" class="burgerListItem__link">Бренды</a>
-    
-                    </li>
-                    <li class="burgerListItem">
-                        <a href="#" class="burgerListItem__link">О нас</a>
-    
-                    </li>
-                    <li class="burgerListItem">
-                        <a href="#" class="burgerListItem__link">Контакты</a>
-    
-                    </li>
-                </ul>
-            </div>
+        <div class="burgerContent invisible">
+            <ul class="burgerList ">
+                <li class="burgerListItem">
+                    <a href="#" class="burgerListItem__link">Главная</a>
+                </li>
+                <li class="burgerListItem">
+                    <details class="categories">
+                        <summary class="categories__heading">
+                            Категории
+                            <svg  class="categories__svg" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L5 5L9 1" stroke="#DBD1B9" stroke-width="1.5"/>
+                                </svg>
+                        </summary>
+                        <div class="categoriesItem">
+                            <i class="fa-solid fa-cheese"></i>    
+                            <a href="catalog.html" class="categoriesItem__name">Сыр</a>
+                        </div>
+                        <div class="categoriesItem">
+                            <i class="fa-solid fa-cow"></i>                                
+                            <a href="catalog.html" class="categoriesItem__name">Молоко</a>
+                        </div>
+                        <div class="categoriesItem">
+                            <i class="fa-solid fa-hotdog"></i>
+                            <a href="catalog.html" class="categoriesItem__name">Мясо</a>
+                        </div>
+                    </details>
+                   
+
+                </li>
+                <li class="burgerListItem">
+                    <a href="#" class="burgerListItem__link">Бренды</a>
+
+                </li>
+                <li class="burgerListItem">
+                    <a href="#" class="burgerListItem__link">О нас</a>
+
+                </li>
+                <li class="burgerListItem">
+                    <a href="#" class="burgerListItem__link">Контакты</a>
+
+                </li>
+            </ul>
+        </div>
         
     </div>
     <div class="banner">
@@ -155,7 +171,7 @@
                 <p class="banner__text">
                     Откроем новые имена и их истории
                 </p>
-                    <a class="banner__btn" href="#">Каталог</a>
+                    <a class="banner__btn" target="blank" href="catalog.html">Каталог</a>
                
                 
             </div>
@@ -430,34 +446,92 @@
                         </span>
                     </h3>
                 </div>
-                <div class="onInstagrammSlider">
-                    <svg class="onInstagrammSlider__arrow" width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8 1L2 6L8 11" stroke="#B2B2B2" stroke-width="1.5"/>
-                    </svg>
+                <style>
+                      html,
+                      .swiperBody {
+                        position: relative;
+                        height: 100%;
+                      }
+                
+                      .swiperBody {
+                        background: #eee;
+                        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+                        font-size: 14px;
+                        color: #000;
+                        margin: 0;
+                        padding: 0;
+                      }
+                      .swiper {
+                          width: 100%;
+                          padding-top: 50px;
+                          padding-bottom: 50px;
+                        }
 
-                    <ul class="onInstagrammSlids">
-                        <li class="slideItem">
-                            <img class="slideItem__img" src="img/slide1.jpg" alt="">
-                        </li>
-                        <li class="slideItem">
-                            <img class="slideItem__img" src="img/slide2.jpg" alt="">
-                        </li>
-                        <li class="slideItem">
-                            <img class="slideItem__img" src="img/slide3.jpg" alt="">
-                        </li>
-                        <li class="slideItem">
-                            <img class="slideItem__img" src="img/slide4.jpg" alt="">
-                        </li>
-                        <li class="slideItem">
-                            <img class="slideItem__img" src="img/slide5.jpg" alt="">
-                        </li>
-                        
-                    </ul>
+                        .swiper-slide {
+                          background-position: center;
+                          background-size: cover;
+                          width: 300px;
+                          height: 300px;
+                        }
 
-                    <svg class="onInstagrammSlider__arrow" width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 11L7 6L1 1" stroke="#B2B2B2" stroke-width="1.5"/>
-                    </svg>
+                        .swiper-slide img {
+                          display: block;
+                          width: 100%;
+                          height: 100%;
+                        }
+                
+                    </style>
+                <div class="swiperBody">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img src="img/good1.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="img/good2.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="img/good3.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="img/good4.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="img/good5.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="img/good6.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="img/good7.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="img/good8.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="img/good9.jpg" />
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
                 </div>
+                  <body>
+                    <!-- Swiper -->
+                    
+                
+                    <!-- Swiper JS -->
+                          
+                  </body>
+                </html>
+                
+                
+
+
+
+
+
+
+
             </div>
         </div>
     </div>
@@ -532,6 +606,8 @@
 
 
      <script src="https://kit.fontawesome.com/4ab540dc73.js" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
      <script src="main.js"></script>
 </body>
 </html>

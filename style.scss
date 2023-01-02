@@ -1,4 +1,4 @@
-@import'_variables';
+@import'scssBlocks/variables';
 @import'scssBlocks/surpriceStyle';
 @import'scssBlocks/topLine';
 @import'scssBlocks/header';
@@ -10,6 +10,10 @@
 @import'scssBlocks/onInstagramm';
 @import'scssBlocks/social';
 @import'scssBlocks/footer';
+@import'scssBlocks/catalog';
+@import'scssBlocks/swiper';
+
+
 
 .myWrap{
     max-width: $siteWidth;
@@ -17,6 +21,8 @@
     padding: 0 15px;
 
 }
+
+
 
 
 
