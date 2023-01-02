@@ -275,6 +275,7 @@ ul {
 }
 
 .categories {
+  list-style: none;
   font-family: "lato", sans-serif;
   text-decoration: none;
   font-weight: 600;
