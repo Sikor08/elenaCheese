@@ -1,5 +1,10 @@
 .header{
     background-color: $mainColor;
+    margin-bottom: 50px;
+    @media (max-width: 1100px) {
+        margin-bottom: 0;
+    }
+
 }
 .headerWrap{
     display: flex;

@@ -13,11 +13,14 @@
     line-height: 22px;
     color: #1F1F1F;
 }    
+
 .footerContent{
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-   
+    flex-direction: column;
+    gap: 20px;
+    & p{
+        margin: 0;
+    }   
 }
 .footerlogo{
     margin-right: 81px;

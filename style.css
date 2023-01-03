@@ -19,6 +19,7 @@ a {
 
 ul {
   list-style-type: none;
+  padding: 0;
 }
 
 .fa-bars {
@@ -32,6 +33,7 @@ ul {
 @media (max-width: 1100px) {
   .supriseWrap {
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -113,6 +115,12 @@ ul {
 
 .header {
   background-color: #1c382c;
+  margin-bottom: 50px;
+}
+@media (max-width: 1100px) {
+  .header {
+    margin-bottom: 0;
+  }
 }
 
 .headerWrap {
@@ -210,11 +218,16 @@ ul {
 }
 @media (max-width: 1100px) {
   .burger {
-    padding: 15px;
+    padding: 25px 10px;
     display: flex;
-    justify-content: space-between;
     position: relative;
+  }
+}
+@media (max-width: 786px) {
+  .burger {
+    justify-content: space-between;
     align-items: center;
+    padding: 10px;
   }
 }
 
@@ -232,19 +245,21 @@ ul {
   display: none;
 }
 
+.burgerContent {
+  z-index: 100;
+}
 @media (max-width: 1100px) {
   .burgerContent {
     position: absolute;
-    top: 47px;
-    width: 40%;
+    top: 66px;
+    width: 100%;
     background-color: #1c382c;
     margin: 0 -15px;
-    padding: 15px;
   }
 }
 @media (max-width: 786px) {
   .burgerContent {
-    top: 90px;
+    top: 82px;
     width: 100%;
     opacity: 0.9;
   }
@@ -252,7 +267,8 @@ ul {
 
 .burgerList {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
 }
 @media (max-width: 786px) {
   .burgerList {
@@ -307,12 +323,6 @@ ul {
   background-image: url(img/promoCheese.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
-  margin-top: 50px;
-}
-@media (max-width: 786px) {
-  .banner {
-    margin-top: 0;
-  }
 }
 .banner__heading {
   font-family: "Cormorant";
@@ -399,6 +409,7 @@ ul {
   font-size: 18px;
   line-height: 27px;
   margin-bottom: 5px;
+  color: black;
 }
 .cardItem__price {
   font-family: "Poppins";
@@ -445,6 +456,13 @@ ul {
 }
 .whyChoose__heading {
   margin-bottom: 12px;
+}
+@media (max-width: 1100px) {
+  .whyChoose__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .whyChooseWrap {
@@ -517,6 +535,7 @@ ul {
 @media (max-width: 1100px) {
   .whoMakesWrap {
     justify-content: center;
+    flex-direction: column;
   }
 }
 @media (max-width: 786px) {
@@ -611,7 +630,7 @@ ul {
 }
 
 .onInstagramm {
-  padding: 76px 0;
+  padding: 30px 0;
 }
 
 .onInstagrammTop {
@@ -733,8 +752,11 @@ ul {
 
 .footerContent {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+}
+.footerContent p {
+  margin: 0;
 }
 
 .footerlogo {
@@ -810,6 +832,67 @@ ul {
   .catalogWrap {
     padding: 0;
   }
+}
+
+.breadCrumbsList {
+  display: flex;
+  list-style: none;
+  gap: 8px;
+}
+
+.breadCrumbs__link {
+  color: #726d60;
+}
+
+.contentGood__title {
+  margin-bottom: 15px;
+}
+.contentGood__price {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.contentGood__btn {
+  padding: 8px 63px;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF;
+  background-color: #1c382c;
+  border: none;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.stepperWrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.stepper {
+  border: 1px solid #1c382c;
+}
+.stepper__input {
+  width: 50px;
+  height: 23px;
+  border: none;
+}
+.stepper__btn {
+  border: none;
+}
+
+.contentDescription__heading {
+  font-family: "lato", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 20px;
+}
+.contentDescription__text {
+  margin-bottom: 35px;
 }
 
 .myWrap {

@@ -1,0 +1,65 @@
+.breadCrumbsList{
+    display: flex;
+    list-style: none;
+    gap: 8px;
+}
+.breadCrumbs{
+    &__link{
+        color: #726d60;
+    }
+}
+.contentGood{
+    &__title{
+        margin-bottom: 15px;
+    }
+    &__price{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+    &__btn{
+        padding: 8px 63px;
+        font-family: 'Poppins';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #FFFFFF;
+        background-color: $mainColor;
+        border: none;
+        border-radius: 10px;
+        margin: auto;
+    }
+}
+
+.stepperWrap{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.stepper{
+    border: 1px solid $mainColor;
+
+    &__input{
+        width: 50px;
+        height: 23px;
+        border: none;
+    }
+    &__btn{
+        border: none;
+        
+    }
+}
+.contentDescription{
+    &__heading{
+        font-family: "lato", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 20px;
+    }
+    &__text{
+        margin-bottom: 35px;
+    }
+    
+}

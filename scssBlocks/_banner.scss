@@ -8,9 +8,7 @@
     background-image: url(img/promoCheese.jpg);
     background-position: bottom;
     background-repeat: no-repeat;
-    margin-top: 50px;
     @media (max-width: $mobileWidth) {
-        margin-top: 0;
     }
 
     &__heading{
