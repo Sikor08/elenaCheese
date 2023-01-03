@@ -879,6 +879,7 @@ ul {
   width: 50px;
   height: 23px;
   border: none;
+  text-align: center;
 }
 .stepper__btn {
   border: none;
