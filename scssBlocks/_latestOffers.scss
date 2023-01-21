@@ -15,6 +15,10 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     gap: 30px;
+    @media (max-width: $mobileWidth) {
+        padding: 0 40px;
+     }
+    
 }
 .cardContent{
     padding: 15px 0;
@@ -27,6 +31,10 @@
     border-radius: 20px;
     &__img{
         width: 100%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+
+
     }
     &__title{
         font-family: 'lato', sans-serif;
@@ -53,7 +61,8 @@
         }
     }
     &__btn{
-        padding: 8px 63px;
+        width: 100%;
+        padding: 8px 0;
         font-family: 'Poppins';
         font-weight: 500;
         font-size: 18px;

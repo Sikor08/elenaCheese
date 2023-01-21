@@ -252,7 +252,7 @@ ul {
   .burgerContent {
     position: absolute;
     top: 66px;
-    width: 100%;
+    width: -webkit-fill-available;
     background-color: #1c382c;
     margin: 0 -15px;
   }
@@ -260,7 +260,6 @@ ul {
 @media (max-width: 786px) {
   .burgerContent {
     top: 82px;
-    width: 100%;
     opacity: 0.9;
   }
 }
@@ -389,6 +388,11 @@ ul {
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   gap: 30px;
 }
+@media (max-width: 786px) {
+  .cardBox {
+    padding: 0 40px;
+  }
+}
 
 .cardContent {
   padding: 15px 0;
@@ -402,6 +406,8 @@ ul {
 }
 .cardItem__img {
   width: 100%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
 }
 .cardItem__title {
   font-family: "lato", sans-serif;
@@ -429,7 +435,8 @@ ul {
   color: #656565;
 }
 .cardItem__btn {
-  padding: 8px 63px;
+  width: 100%;
+  padding: 8px 0;
   font-family: "Poppins";
   font-weight: 500;
   font-size: 18px;
@@ -825,7 +832,7 @@ ul {
 .catalogWrap {
   padding: 50px 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 20px;
 }
 @media (max-width: 786px) {
