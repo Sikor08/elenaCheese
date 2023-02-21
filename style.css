@@ -439,8 +439,7 @@ ul {
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
-  -webkit-text-decoration-line: line-through;
-          text-decoration-line: line-through;
+  text-decoration-line: line-through;
   color: #656565;
 }
 .cardItem__btn {
@@ -910,6 +909,10 @@ ul {
 }
 .contentDescription__text {
   margin-bottom: 35px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .myWrap {

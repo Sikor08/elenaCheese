@@ -14,7 +14,9 @@
 @import'scssBlocks/swiper';
 @import'scssBlocks/good';
 
-
+html{
+    scroll-behavior: smooth;
+}
 
 
 .myWrap{
@@ -46,7 +48,6 @@
 .contentGood__btn{
     opacity: 0.7;
 }
-
 
 
 
