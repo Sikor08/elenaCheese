@@ -19,13 +19,16 @@
     }
 }
 .whyChooseList{
+
     padding-top: 30px;
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
     gap: 30px;
     list-style-type: none;
-
+@media (max-width: $mobileWidth) {
+        display: none;
+    }
 }
 .whyChooseItem{
     @media (max-width: $mobileWidth) {
