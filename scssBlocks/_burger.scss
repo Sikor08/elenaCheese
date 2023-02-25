@@ -31,10 +31,10 @@
     top: 66px;
     width: -webkit-fill-available;
     background-color: #1c382c;
-    margin: 0 -15px;
     }
     @media (max-width: $mobileWidth) {
         top: 82px;
+        left: 0;
         opacity: 0.9;
     }
 }

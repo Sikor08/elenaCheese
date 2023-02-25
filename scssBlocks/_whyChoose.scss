@@ -1,4 +1,5 @@
 .whyChoose{
+    display: none;
     padding-top: 94px;
     @include heading;
     &__heading{
@@ -27,7 +28,7 @@
     gap: 30px;
     list-style-type: none;
 @media (max-width: $mobileWidth) {
-        display: none;
+        // display: none;
     }
 }
 .whyChooseItem{
